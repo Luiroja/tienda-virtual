@@ -83,7 +83,6 @@ button {
     align-items: center;
     justify-content: center;
     background-color: rgb(201, 14, 14);
-    
     border-radius: 15px;
     padding: 10px;
     margin-top: 10px !important;
@@ -109,52 +108,111 @@ h2 {
     }
     .cart-group {
         justify-content: center;
-    }
-
-    .cart-items-name  .cart-items-funcion{
-        width: 30%;
+        width: 20%;
         text-justify: center;
-        display : block;
-        margin: 0 auto;
+        display : grid !important;
+        font-size: 10px;
         
     }
+
+    .cart-items-funcion {
+        display: flex;
+        justify-content: center;
+    }
+    .cart-items-price {
+        font-size: 12px;
+    }
     .precio-total {
-        width: 80%;
-        margin : 0 auto;
-        font-size: 14px;
+        width: 70vw;
+
+        font-size: 12px;
     }
     
     
 }
 
 @media (max-width: 480px) and (min-width:319px) {
-    .cart-items {
+    .cart-list {
+        margin: 0 auto;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
         width : 60vw;
+        flex-wrap: wrap;
+    }
+    .cart-group {
+        width: 60vw;
+        flex-wrap: wrap;
         
     }
-    .label--group  {
-        width : 70%;
+
+    .cart-items-funcion {
+        display: flex;
+        justify-content: center;
     }
+    .cart-items-price {
+        font-size: 14px;
+    }
+
+   
     .precio-total {
-        width: 30%;
+        width: 60vw;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 768px) and (min-width:479px) {
-    .cart-items {
+    .cart-list {
+        margin: 0 auto;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
         width : 60vw;
+        flex-wrap: wrap;
+    }
+    .cart-group {
+        width: 60vw;
+        flex-wrap: wrap;
         
     }
-    .label--group  {
-        width : 80%;
+
+    .cart-items-funcion {
+        display: flex;
+        justify-content: center;
+    }
+    .cart-items-price {
+        font-size: 14px;
+    }
+    .precio-total {
+        width: 60vw;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 1200px) and (min-width:767px) {
     
-    .cart-list  {
-        width : 70%;
+    .cart-list {
+        margin: 0 auto;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        width : 60vw;
+    
+    }
+    .cart-group {
+        width: 60vw;
     }
 
-    
+    .cart-items-funcion {
+        display: flex;
+        justify-content: center;
+    }
+    .cart-items-price {
+        display : flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 14px;
+    }
+    .precio-total {
+        width: 60vw;
+        font-size: 14px;
+    }
 }
+  

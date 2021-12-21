@@ -52,15 +52,13 @@ export default function Cart(handleAddProduct,handleRemoveProduct,handleClearCar
                             onClick={()=>context.handleRemoveProduct(item)}>-</button>
                         </div>
                         <div className="cart-items-price">
-                        <div >
-                            Cantidad:{item.cant}
-                        </div>
-                        <div >
-                           Precio Unitario: ${item.price}
-                        </div>
-                        <div >
-                            Subtotal: ${item.cant*item.price}
-                        </div>
+                        <p>Cantidad:{item.cant}</p>
+                        <p>Precio Unitario: ${item.price}</p>
+                        <p> Subtotal: ${item.cant*item.price}</p>
+                
+                        
+                           
+                       
                         </div>
                     </div>
                 ))}
