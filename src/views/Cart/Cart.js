@@ -2,7 +2,6 @@ import React,{useState, useEffect} from "react";
 import './cart.css';
 import { useItemContext } from "../../context/ItemContext";
 
-
 export default function Cart(handleAddProduct,handleRemoveProduct,handleClearCart){
    const context=useItemContext();
    const [TotalPaga, setTotalPaga]=useState(0);

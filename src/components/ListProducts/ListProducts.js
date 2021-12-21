@@ -8,8 +8,12 @@ export default function ListProducts() {
     const context=useProductContext();
     const context2=useItemContext();
     // tenemos guardado lista de productos , el producto seleccionado y la actualizacion del roducto seleccionado
+
+    // sweetalert
+    
   
     return (
+        
         <div className="products">
            {context.listaProductos.map((product)=>(
                <div key={product._id} className="card">

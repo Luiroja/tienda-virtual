@@ -4,10 +4,17 @@ import axios from "axios";
 import { useHistory } from "react-router";
 import { useUserContext } from "../../context/userContext";
 import './login.css'
+import swal from '@sweetalert/with-react'
 
 export default function Login() {
   const history = useHistory();
   const context = useUserContext();
+
+  const functionAlert=()=> {
+    swal ("Hola")
+  }
+
+  
   const login = (datos) => {
     axios
       .post("https://ecomerce-master.herokuapp.com/api/v1/login", datos)
@@ -66,7 +73,7 @@ export default function Login() {
             required
           />
         </div>
-        <button type="submit" className="btn btn-login">Iniciar Sesión</button>
+        <button type="submit" className="btn btn-login" {...()=>{functionAlert()}}>Iniciar Sesión</button>
       </form>
     </div>
   );
